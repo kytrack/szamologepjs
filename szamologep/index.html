@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js"></script>
+
+    <title>Szamologep</title>
+</head>
+<body>
+    <form>
+        <label for="elsoszam">Kérem az első számot: </label><br>
+        <input type="text" id="elsoszamid" name="elsoszam"><br>
+
+        <label for="masodik">Kérem a második számot: </label><br>
+        <input type="text" id="masodikszamid" name="masodikszam"><br>
+
+
+        <input type="button" id="osszeadasid" onclick="muveletek('+')" value="+">
+
+        <input type="button" id="kivonasid" onclick="muveletek('-')" value="-">
+
+        <input type="button" id="szorozasid" onclick="muveletek('*')" value="*">
+
+        <input type="button" id="osztasid" onclick="muveletek('/')" value="/">
+
+
+        <h1>Eredmény</h1>
+        <h1 id="eredmenyid"></h1>
+    </form>
+</body>
+</html>
